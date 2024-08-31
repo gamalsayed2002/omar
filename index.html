@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Albloshi Food Group - البلوشي للأغذية</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <nav>
+          <div class="logo">
+            <img src="./imgs/logo.png" alt="logo not found" />
+          </div>
+          <ul>
+            <li><a href="./english/english.html">English</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#our_id">علامتنا التجارية</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+          </ul>
+          <div class="nothing"></div>
+        </nav>
+      </header>
+      <header class="mobile_header">
+        <nav>
+          <div class="logo">
+            <img src="./imgs/logo.png" alt="logo not found" />
+          </div>
+          <div class="menu" id="menu" onclick="toggle()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+        <ul id="mobile_ul">
+          <i class="fa-solid fa-x exit" id="exit" onclick="toggle()"></i>
+          <li><a href="./english/english.html">English</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#our_id">علامتنا التجارية</a></li>
+          <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+      </header>
+
+      <video class="bg-video" autoplay muted loop>
+        <source src="./videos/vid.mp4" type="video/mp4" />
+      </video>
+    </main>
+
+    <section class="about" id="about">
+      <h2>من نحن</h2>
+      <p>
+        من قلب المملكة كانت انطلاقة البلوشي للأغذية منذ سنوات لتشكل حجر الاساس
+        لاستيراد اجود انواع البن والبهارات والسمسم وغيرها من المحاصيل من مزارعها
+        الام وتجهيزها بمصانعنا بالمملكة على اعلى مستوى من الجودة وبأدق التفاصيل
+        لتصل منتجاتنا إليكم بأعلى جودة ومذاق لا مثيل له
+      </p>
+      <img src="./imgs/about.png" alt="" />
+    </section>
+
+    <section class="our_id" id="our_id">
+      <h1>من علامتنا التجارية</h1>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide first">
+            <a>
+              <div class="content">
+                <h2>سبايس رود</h2>
+                <p>
+                  تقوم سبايس بإنتاج الهيل عالي الجودة، مما يجلب نكهات وتجارب
+                  استثنائية
+                </p>
+              </div>
+              <img src="./imgs/swiper1.png" alt="img not found" />
+            </a>
+          </div>
+
+          <div class="swiper-slide first">
+            <a>
+              <div class="content">
+                <h2>KHULLA</h2>
+                <p>
+                  تقدم خُلّة قهوة عالية الجودة، وتثري تجارب التذوق وتقدم نكهات
+                  أصيلة إلى العملاء في جميع أنحاء العالم
+                </p>
+              </div>
+              <img src="./imgs/logo2.png" alt="img not found" />
+            </a>
+          </div>
+          <div class="swiper-slide first">
+            <a>
+              <div class="content">
+                <h2>مجموعة البلوشي</h2>
+                <p>
+                  منتجات غذائية متميزة تلهم الأجيال وتجدد حبهم للنكهات الأصيلة
+                  والجودة الاستثنائية
+                </p>
+              </div>
+              <img src="./imgs/logo.png" alt="img not found" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="head">
+        <h1>إتصل بنا</h1>
+        <p>
+          إذا كان لديك أي استفسار لمجموعة البلوشي الغذائية، فيرجى ملء النموذج
+          أدناه و سوف نتواصل معك خلال 24 ساعة
+        </p>
+      </div>
+      <form action="">
+        <input type="text" placeholder="الاسم" />
+        <input type="email" placeholder="البريد" />
+        <textarea placeholder="الرسالة"></textarea>
+        <button>أرسل</button>
+      </form>
+      <h2 class="title">إتصل بنا</h2>
+      <div class="contact_info">
+        <div class="box">
+          <i class="fa fa-map-marker fa-4x social-links"></i>
+          <h5>المكتب الرئيسي</h5>
+          <p>شارع المناهج, حي النهضة جدة, المملكة العربية السعودية</p>
+        </div>
+
+        <div class="box">
+          <i class="fa fa-phone fa-4x social-links"></i>
+          <h5>اتصل</h5>
+          <p>9200 21966</p>
+        </div>
+
+        <div class="box">
+          <i class="fa fa-envelope fa-4x social-links"></i>
+          <h5>البريد الالكتروني</h5>
+          <p>ceo@AlboloshiFoodGroup.com</p>
+        </div>
+      </div>
+    </section>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main scrpit -->
+    <script src="app.js"></script>
+  </body>
+</html>

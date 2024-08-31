@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Albloshi Food Group - البلوشي للأغذية</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <nav>
+          <div class="logo">
+            <img src="../imgs/logo.png" alt="logo not found" />
+          </div>
+          <ul>
+            <li><a href="../index.html">عربي</a></li>
+            <li><a href="#about"> ABOUT</a></li>
+            <li><a href="#our_id"> BRANDS</a></li>
+            <li><a href="#contact"> BRANDS</a></li>
+          </ul>
+          <div class="nothing"></div>
+        </nav>
+      </header>
+      <header class="mobile_header">
+        <nav>
+          <div class="logo">
+            <img src="../imgs/logo.png" alt="logo not found" />
+          </div>
+          <div class="menu" id="menu" onclick="toggle()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+        <ul id="mobile_ul">
+          <i class="fa-solid fa-x exit" id="exit" onclick="toggle()"></i>
+          <li><a href="../index.html">عربي</a></li>
+          <li><a href="#about"> ABOUT</a></li>
+          <li><a href="#our_id"> BRANDS</a></li>
+          <li><a href="#contact"> BRANDS</a></li>
+        </ul>
+      </header>
+
+      <video class="bg-video" autoplay muted loop>
+        <source src="../videos/vid.mp4" type="video/mp4" />
+      </video>
+    </main>
+
+    <section class="about" id="about">
+      <h2>ABOUT US</h2>
+      <p>
+        From the heart of the Kingdom, AlBloshi Foods started years ago, laying
+        the foundation for importing the finest types of coffee, cardamom,
+        spices, sesame, and other crops from its original farms
+      </p>
+      <img src="../imgs/about.png" alt="" />
+    </section>
+
+    <section class="our_id" id="our_id">
+      <h1>OUR BRANDS</h1>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide first">
+            <a>
+              <div class="content">
+                <h2>Spice Road</h2>
+                <p>
+                  Spice Road has been producing high-quality cardamom, creating
+                  exceptional flavors and experiences
+                </p>
+              </div>
+              <img src="../imgs/swiper1.png" alt="img not found" />
+            </a>
+          </div>
+
+          <div class="swiper-slide first">
+            <a>
+              <div class="content">
+                <h2>KHULLA</h2>
+                <p>
+                  High quality Coffee beans products, enriching authentic
+                  flavors to evrey client
+                </p>
+              </div>
+              <img src="../imgs/logo2.png" alt="img not found" />
+            </a>
+          </div>
+          <div class="swiper-slide first">
+            <a>
+              <div class="content">
+                <h2>Alboloshi Food Group</h2>
+                <p>
+                  Premium food products that inspire generations and rekindle
+                  their love for authentic flavors and exceptional quality
+                </p>
+              </div>
+              <img src="../imgs/logo.png" alt="img not found" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="head">
+        <h1> CONTACT US</h1>
+        <p>
+          Whether you're interested in working with us or just want to say hello, write us!        </p>
+      </div>
+      <form action="">
+        <input type="text" placeholder="name" class="en"/>
+        <input type="email" placeholder="email"  class="en"/>
+        <textarea placeholder="leave your message" class="en"></textarea>
+        <button>SEND MESSAGE</button>
+      </form>
+      <h2 class="title">CONNECT WITH US</h2>
+      <div class="contact_info">
+        <div class="box">
+          <i class="fa fa-map-marker fa-4x social-links"></i>
+          <h5>Main Office</h5>
+          <p>8592 Al Manahj St, Jeddah, Saudi Arabia</p>
+        </div>
+
+        <div class="box">
+          <i class="fa fa-phone fa-4x social-links"></i>
+          <h5>Call</h5>
+          <p>9200 21966</p>
+        </div>
+
+        <div class="box">
+          <i class="fa fa-envelope fa-4x social-links"></i>
+          <h5>Email us</h5>
+          <p>ceo@AlboloshiFoodGroup.com</p>
+        </div>
+      </div>
+    </section>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main scrpit -->
+    <script src="../app.js"></script>
+  </body>
+</html>
